@@ -5,6 +5,7 @@
 
 function posts(state = [], action) {
     console.log(state, action)
+    console.log('the post will change')
     return state;
 }
 
