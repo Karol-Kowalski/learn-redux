@@ -18,6 +18,7 @@ const store = createStore(rootReducer, defaultState);
 
 export const history = syncHistoryWithStore(browserHistory, store);
 
+// relading page after change reducers
 if(module.hot) {
     module.hot.accept('./reducers/', () => {
         const nextRootReducer = require('./reducers/index').default;
